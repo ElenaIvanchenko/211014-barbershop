@@ -1,0 +1,42 @@
+@font-face{
+font-family: "PT Sans Narrow";	
+src: url("../fonts/ptsansnarrow.woff") format("woff"),
+}
+html, body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+body{
+	background: #000 url("../img/tint.jpg") no-repeat fixed center center / cover ;
+}
+body, button{
+	font-family: "PT Sans Narrow";
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 24px;
+	color: #000;
+}
+h2{
+	font-family: "PT Sans Narrow";
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 42px;
+	color: #000;
+	text-transform: uppercase;
+	margin: 0;
+}
+p{
+	font-family: "PT Sans Narrow";
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 24px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+
+
+
+ 
