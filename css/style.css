@@ -26,7 +26,7 @@ body.inner-page{
 }
 body.index-page{
 	background: #000 url("../img/tint.jpg")  no-repeat 50% 3px;
-	background-size: 1122px auto;
+	background-size: auto 1122px;
 }
 body, button{
 	font-family: "PT Sans Narrow",arial,sans-serif;
@@ -58,6 +58,7 @@ p{
 }
 .main-header {
 	margin-bottom: 60px;
+	background-color: #000;
 }
 .container{
 	width: 940px;
@@ -204,6 +205,8 @@ p{
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
+	background-image: url("../img/footer.png");
+	background-repeat: repeat;
 }
 .footer-contacts {
 	float: left;
