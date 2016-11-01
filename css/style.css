@@ -20,7 +20,11 @@ html, body{
 	height: 100%;
 	width: 100%;
 }
-body{
+body.inner-page{
+	background-image: url("../img/inner-page-1.jpg");
+	background-repeat: repeat;
+}
+body.index-page{
 	background: #000 url("../img/tint.jpg")  no-repeat 50% 3px;
 	background-size: 1122px auto;
 }
@@ -141,19 +145,21 @@ p{
 }
 .filter{
 	float: left;
-	width: 230px;
+	width: 220px;
+	margin-right: 10px;
+}
+.filter-group ul{
+	padding-left: 0;
 }
 .catalog{
 	float: right;
 	display: table;
 	width: 700px;
-	
 }
 .catalog-item{
 	display: inline-block;
 	width: 220px;
 	margin: 10px; 
-
 }
 .catalog-item:nth-child(3n+1){
 	margin-left: 0;
@@ -167,7 +173,8 @@ p{
 }
 .inner-column-galery{
 	float: left;
-	width: 480px;
+	width: 460px;
+	margin-right: 10px;
 }
 .item-img{
 	height: 498px;
@@ -189,8 +196,9 @@ p{
 }
 .inner-column-info{
 	float: right;
-	width: 400px;
+	width: 460px;
 	padding-top: 25px;
+	margin-left: 10px;
 }
 .main-footer {
   margin-top: 65px;
