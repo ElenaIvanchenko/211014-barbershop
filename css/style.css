@@ -15,18 +15,16 @@
 	font-style: normal;
 }
 html, body{
-	padding: 0;
-	margin: 0;
-	height: 100%;
-	width: 100%;
+	
+	min-width: 960px;
 }
 body.inner-page{
 	background-image: url("../img/inner-page-1.jpg");
 	background-repeat: repeat;
 }
 body.index-page{
-	background: #000 url("../img/tint.jpg")  no-repeat 50% 3px;
-	background-size: auto 1122px;
+	background: #000 url("../img/tint.jpg")  no-repeat 50% top;
+	/*background-size: auto 1122px;*/
 }
 body, button{
 	font-family: "PT Sans Narrow",arial,sans-serif;
@@ -36,7 +34,7 @@ body, button{
 	color: #000;
 }
 h2{
-	font-family: "PT Sans Narrow",arial,sans-serif;
+	font-family: "PT Sans Narrow", Arial, sans-serif;
 	font-weight: bold;
 	font-size: 30px;
 	line-height: 42px;
@@ -77,6 +75,8 @@ p{
 }
 .main-nav ul{
 	margin: 0;
+	padding: 0;
+  list-style: none;
 }
 .main-nav li{
   display: inline-block;
