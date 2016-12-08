@@ -13,13 +13,36 @@
 					<ul>
 						<li><a class="main-nav-a" href="#">Информация</a></li>
 						<li><a class="main-nav-a" href="#">Новости</a></li>
-						<li><a class="main-nav-a" href="#">Прайс-лист</a></li>
-						<li><a class="main-nav-a" href="#">Магазин</a></li>
+						<li><a class="main-nav-a" href="price.html">Прайс-лист</a></li>
+						<li><a class="main-nav-a" href="shop.html">Магазин</a></li>
 						<li><a class="main-nav-a" href="#">Контакты</a></li>
 					</ul>
 				</nav>
 				<div class="user-block">
-					<a class="login" href="#">Вход</a>
+					<a class="login" href="#"><span></span>Вход</a>
+					<div class="modal modal-login">
+						<a class="close" href="#"></a>
+						<form class="login-form">
+							<h2>Личный кабинет</h2>
+							<p>Введите пожалуйста свой логин и пароль</p>
+							<div class="input-box">
+								<label for="login-name"></label>
+								<input type="text" id="login-name" name="login-name" placeholder="Логин">
+							</div>
+							<div class="input-box">
+								<label for="login-password"></label>
+								<input type="text" id="login-password" name="login-password" placeholder="Пароль">
+							</div>
+							<div class="input-box clearfix">
+								<input  type="checkbox" id="name" checked>
+								<label  for="name">Запомните меня</label>
+								<a href="#">Я забыл пароль!</a>
+							</div>
+							<div class="button">
+								<button class="login-btn" type="submit">Войти</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -35,11 +58,12 @@
 					</div>
 					<div class="features-item">
 						<b class="features-name">Круто</b>
-						<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+						<p>Забудьте, как вы стриглись раньше.<br>
+							Мы сделаем из вас звезду футбола или кино!   Во всяком случае внешне.</p>
 					</div>
 					<div class="features-item">
 						<b class="features-name">Дорого</b>
-						<p>Наши мастера — профессионалы своего дела и   не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+						<p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
 					</div>
 				</section>
 				<div class="index-content clearfix">
@@ -54,8 +78,12 @@
 								<p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
 								<time datetime="2016-01-18">18 января</time>
 							</li>
+							<li>
+								<p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+								<time datetime="2016-01-18">18 января</time>
+							</li>
 						</ul>
-						<a class="btn" href="#">Все новости</a>
+						<a class="btn btn-index" href="#">Все новости</a>
 					</div>
 					<div class="index-content-right">
 						<h2 class="filter-title">Фотогалерея</h2>
@@ -68,7 +96,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="index-content clearfix">
+				<div class="index-content ind-cont-2 clearfix">
 					<div class="index-content-left">
 						<h2 class="filter-title">Контактная информация</h2>
 						<p>Барбершоп «Бородинский»<br>
@@ -79,18 +107,23 @@
 							пн — пт: с 10:00 до 22:00<br>
 							сб — вс: с 10:00 до 19:00
 						</p>
-						<a class="btn" href="#">Как проехать</a>
-						<a class="btn" href="#">Обратная связь</a>
+						<a class="btn btn-contact" href="#">Как проехать</a>
+						<div class="modal modal-map">
+							<a class="close" href="#"></a>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13203.094747822623!2d37.61894237050108!3d55.74409055068033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afde0ba2715%3A0x8c4555d024e8c518!2z0KLRgNC10YLRjNGP0LrQvtCy0YHQutCw0Y8!5e0!3m2!1sru!2sru!4v1477478942902"></iframe>
+						</div>
+						<a class="btn btn-contact" href="#">Обратная связь</a>
 					</div>
 					<div class="index-content-right">
 						<h2 class="filter-title">Записаться</h2>
-						<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+						<p>Укажите желаемую дату и время и мы свяжемся<br>
+							с вами для подтверждения брони</p>
 						<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
 							<input type="text" name="date" value="" placeholder="Дата">
 							<input type="text" name="time" value="" placeholder="Время">
 							<input type="text" name="name" value="" placeholder="Ваше имя">
 							<input type="tel" name="phone" value="" placeholder="Телефон">
-							<button class="btn" type="submit">Отправить</button>
+							<button class="btn btn-submit" type="submit">Отправить</button>
 						</form>
 					</div>
 				</div>
@@ -112,9 +145,10 @@
 				</section>
 				<section class="footer-copyright">
 					<p>Разработано:</p>
-					<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+					<a class="btn btn-copyright" href="https://htmlacademy.ru">HTMLAcademy.RU</a>
 				</section>
 			</div>
 		</footer>
+		<script src="js/script.js"></script>
 	</body>
 </html>
